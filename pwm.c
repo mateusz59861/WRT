@@ -14,27 +14,27 @@ int main (void)
   if (wiringPiSetup () == -1)
     exit (1) ;
 
-  //pinMode (1, PWM_OUTPUT) ;
-  softPwmCreate(4,0,100);
+  pinMode (1, PWM_OUTPUT) ;
+  //softPwmCreate(4,0,100);
   
-  softPwmWrite(4, 70);
-  delay(100000);
+  //softPwmWrite(4, 70);
+  //delay(100000);
 
   for (;;)
   {
-    //for (bright = 0 ; bright < 1024 ; ++bright)
-    for (bright = 0 ; bright < 100 ; ++bright)
+    for (bright = 0 ; bright < 1024 ; ++bright)
+    //for (bright = 0 ; bright < 100 ; ++bright)
     {
-      //pwmWrite (1, bright) ;
-      softPwmWrite(4, bright);
+      pwmWrite (1, bright) ;
+      //softPwmWrite(4, bright);
       delay (5) ;
     }
 
-    //for (bright = 1023 ; bright >= 0 ; --bright)
-    for (bright = 99 ; bright >= 0 ; --bright)
+    for (bright = 1023 ; bright >= 0 ; --bright)
+    //for (bright = 99 ; bright >= 0 ; --bright)
     {
-      //pwmWrite (1, bright) ;
-      softPwmWrite(4, bright);
+      pwmWrite (1, bright) ;
+      //softPwmWrite(4, bright);
       delay (5) ;
     }
   }
