@@ -33,7 +33,7 @@ int main (void)
     {
       pwmWrite (1, bright) ;
       //softPwmWrite(4, bright);
-      delay (5) ;
+      delay (1) ;
     }
 
     for (bright = 1023 ; bright >= 0 ; --bright)
@@ -41,7 +41,7 @@ int main (void)
     {
       pwmWrite (1, bright) ;
       //softPwmWrite(4, bright);
-      delay (5) ;
+      delay (1) ;
     }
   }
 
