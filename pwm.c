@@ -20,10 +20,10 @@ int main (void)
   //softPwmWrite(4, 70);
   pwmWrite (1, 1023) ;
   printf ("1023\n") ;
-  delay(5000);
+  delay(20000);
   pwmWrite (1, 600) ;
   printf ("600\n") ;
-  delay(5000);
+  delay(10000);
 
 
   for (;;)
