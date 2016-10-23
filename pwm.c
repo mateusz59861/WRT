@@ -18,7 +18,13 @@ int main (void)
   //softPwmCreate(4,0,100);
   
   //softPwmWrite(4, 70);
-  //delay(100000);
+  pwmWrite (1, 1023) ;
+  printf ("1023\n") ;
+  delay(5000);
+  pwmWrite (1, 600) ;
+  printf ("600\n") ;
+  delay(5000);
+
 
   for (;;)
   {
