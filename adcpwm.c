@@ -97,7 +97,7 @@ int main (int argc, char *argv [])
     for (;;)
   	{   
 		printf("------------------------------------------------------------- \n");
-        pwmWrite (1, myAnalogRead(spiChannel,channelConfig,0)/2) ;
+        pwmWrite (1, myAnalogRead(spiChannel,channelConfig,1)) ;
 		if(analogChannel>0)
 		{
 			printf("MCP3008(CE%d,%s): analogChannel %d = %d\n",spiChannel,(channelConfig==CHAN_CONFIG_SINGLE)
