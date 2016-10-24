@@ -56,8 +56,8 @@ int main (int argc, char *argv [])
 
     int loadSpi=FALSE;
     
-    //softPwmCreate(4,0,100);
-    pinMode (1, PWM_OUTPUT) ;
+    softPwmCreate(4,0,100);
+    //pinMode (1, PWM_OUTPUT) ;
 
     int analogChannel=0;
     int spiChannel=0;
@@ -101,8 +101,8 @@ int main (int argc, char *argv [])
 			printf("MCP3008(CE%d,%s): analogChannel %d = %d\n",spiChannel,(channelConfig==CHAN_CONFIG_SINGLE)
 				   ?"single-ended":"differential",analogChannel,myAnalogRead(spiChannel,channelConfig,analogChannel-1));
 			printf("%d\n",myAnalogRead(spiChannel,channelConfig,analogChannel-1));
-			//softPwmWrite(4, myAnalogRead(spiChannel,channelConfig,0)/10);
-			pwmWrite (1, myAnalogRead(spiChannel,channelConfig,0)) ;
+			softPwmWrite(4, myAnalogRead(spiChannel,channelConfig,0)/10);
+			//pwmWrite (1, myAnalogRead(spiChannel,channelConfig,0)) ;
 		}
 		else
 		{
