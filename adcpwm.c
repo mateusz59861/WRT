@@ -102,7 +102,7 @@ int main (int argc, char *argv [])
 		{
 			printf("MCP3008(CE%d,%s): analogChannel %d = %d\n",spiChannel,(channelConfig==CHAN_CONFIG_SINGLE)
 				   ?"single-ended":"differential",analogChannel,myAnalogRead(spiChannel,channelConfig,analogChannel-1));
-			printf("%d\n",myAnalogRead(spiChannel,channelConfig,analogChannel-1));
+			//printf("%d\n",myAnalogRead(spiChannel,channelConfig,analogChannel-1));
 			//softPwmWrite(4, myAnalogRead(spiChannel,channelConfig,0)/10);
 			
 		}
@@ -112,7 +112,7 @@ int main (int argc, char *argv [])
 			{
 				printf("MCP3008(CE%d,%s): analogChannel %d = %d\n",spiChannel,(channelConfig==CHAN_CONFIG_SINGLE)
 					   ?"single-ended":"differential",i+1,myAnalogRead(spiChannel,channelConfig,i));
-				//printf("%d\n",myAnalogRead(spiChannel,channelConfig,1));
+				printf("%d\n",myAnalogRead(spiChannel,channelConfig,1));
 			}
 		}
 		delay (100) ;
