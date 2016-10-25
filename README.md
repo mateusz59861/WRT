@@ -12,3 +12,6 @@ do zrobienia:
 	1. dwustanowy z histerezą
 	2. P/PI/PID
 	3. jak da radę, to jakiś kabaliuszowy ze sztuczną głupotą
+
+JAK KOMPILOWAĆ
+wpisujesz make

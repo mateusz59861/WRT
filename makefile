@@ -3,12 +3,12 @@ LFLAGS=-Wall
 RFLAGS=-lwiringPi
 
 adcpwm: adcpwm.o
-	$(CC) $(LFLAGS) $@ $<
+	$(CC) $(LFLAGS) $@ $< $(RFLAGS)
  
 adcpwm.o: adcpwm.c
-	$(CC) $(LFLAGS) -o $@ $<
+	$(CC) $(LFLAGS) -o $@ $< $(RFLAGS)
  
 .PHONY: clean
  
 clean:
-	rm -f adc adc.o
+	rm -f adcpwm adcpwm.o
