@@ -1,9 +1,14 @@
-# WRT
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Kopirajt Alkoholik&Pijak
 
-dupadupa
+do zrobienia:
+-makefile - zarządzanie kompilacją składającą się z wielu plików źródłowych
+-podział programu na te pliki (koncepcyjny)
+-napisanie bibliotek do obsługi:
+	*wejście ADC
+	*wyjście 1(zawór) i 2(?) przez mostek H
+	*przesyłanie danych na serwer/ do kutlaba/ etc
+	*pomiar z enkodera
+-napisanie regulatora
+	1. dwustanowy z histerezą
+	2. P/PI/PID
+	3. jak da radę, to jakiś kabaliuszowy ze sztuczną głupotą
