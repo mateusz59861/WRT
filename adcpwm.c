@@ -58,7 +58,7 @@ int main (int argc, char *argv [])
     
     //softPwmCreate(4,0,100);
     pinMode (1, PWM_OUTPUT) ;
-    pwmSetRange(512);
+    //pwmSetRange(512);
 
     int analogChannel=0;
     int spiChannel=0;
