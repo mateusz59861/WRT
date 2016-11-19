@@ -38,7 +38,7 @@
 
 #define BCM2708_PERI_BASE        0x20000000
 #define CLOCK_BASE               (BCM2708_PERI_BASE + 0x101000) /* Clocks */
-#define GPIO_BASE                (BCM2708_PERI_BASE + 0x3F0000) /* GPIO   */
+#define GPIO_BASE                (BCM2708_PERI_BASE + 0x200000) /* GPIO   */
 #define PWM_BASE                 (BCM2708_PERI_BASE + 0x20C000) /* PWM    */
 #define SPI0_BASE                (BCM2708_PERI_BASE + 0x204000) /* SPI0 controller */
 #define UART0_BASE               (BCM2708_PERI_BASE + 0x201000) /* Uart 0 */
