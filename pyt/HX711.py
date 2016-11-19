@@ -201,7 +201,7 @@ if __name__ == "__main__":
 
    print("start with CH_B_GAIN_32 and callback")
 
-   s = HX711.sensor(pi, DATA=9, CLOCK=11, mode=CH_B_GAIN_32, callback=cbf)
+   s = HX711.sensor(pi, DATA=23, CLOCK=24, mode=CH_B_GAIN_32, callback=cbf)
 
    time.sleep(5)
 
