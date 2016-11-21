@@ -36,13 +36,13 @@
 
 #include "gb_common.h"
 
-#define BCM2708_PERI_BASE         0x3F000000
-#define CLOCK_BASE               (BCM2708_PERI_BASE + 0x101000) /* Clocks */
-#define GPIO_BASE                (BCM2708_PERI_BASE + 0x200000) /* GPIO   */
-#define PWM_BASE                 (BCM2708_PERI_BASE + 0x20C000) /* PWM    */
-#define SPI0_BASE                (BCM2708_PERI_BASE + 0x204000) /* SPI0 controller */
-#define UART0_BASE               (BCM2708_PERI_BASE + 0x201000) /* Uart 0 */
-#define UART1_BASE               (BCM2708_PERI_BASE + 0x215000) /* Uart 1 (not used) */
+#define BCM2837_PERI_BASE         0x3F000000
+#define CLOCK_BASE               (BCM2837_PERI_BASE + 0x101000) /* Clocks */
+#define GPIO_BASE                (BCM2837_PERI_BASE + 0x200000) /* GPIO   */
+#define PWM_BASE                 (BCM2837_PERI_BASE + 0x20C000) /* PWM    */
+#define SPI0_BASE                (BCM2837_PERI_BASE + 0x204000) /* SPI0 controller */
+#define UART0_BASE               (BCM2837_PERI_BASE + 0x201000) /* Uart 0 */
+#define UART1_BASE               (BCM2837_PERI_BASE + 0x215000) /* Uart 1 (not used) */
 
 #include <stdio.h>
 #include <string.h>
