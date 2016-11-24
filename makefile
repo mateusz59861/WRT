@@ -1,12 +1,12 @@
 CC=gcc
-LFLAGS=-Wall
+LFLAGS=-Wall -o
 RFLAGS=-lwiringPi
 
-adcpwm: adcpwm.o
+adcpwm: adcpwm.c
 	$(CC) $(LFLAGS) $@ $< $(RFLAGS)
  
-adcpwm.o: adcpwm.c
-	$(CC) $(LFLAGS) -o $@ $< $(RFLAGS)
+#adcpwm.o: adcpwm.c
+#	$(CC) $(LFLAGS) -o $@ $< $(RFLAGS)
  
 .PHONY: clean
  

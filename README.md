@@ -14,4 +14,8 @@ do zrobienia:
 	3. jak da radę, to jakiś kabaliuszowy ze sztuczną głupotą
 
 JAK KOMPILOWAĆ
-wpisujesz make
+wpisujesz 
+make clean
+make
+
+GIT
