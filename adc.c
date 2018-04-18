@@ -26,7 +26,7 @@ void loadSpiDriver()
 {
     if (system("gpio load spi") == -1)
     {
-        fprintf (stderr, "Can't load the SPI driver: %s\n", strerror (errno)) ;
+        fprintf (stderr, "Cannot load the SPI driver: %s\n", strerror (errno)) ;
         exit (EXIT_FAILURE) ;
     }
 }
